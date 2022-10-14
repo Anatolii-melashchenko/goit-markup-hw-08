@@ -1,8 +1,10 @@
 /* ================= HERO ================= */
 
-.hero .container{
+.hero {
+    
     max-width: 480px;
-    // height: 400px;
+    // height: auto;
+    margin: 0 auto;
     
     padding-top: 130px;
     padding-bottom: 130px;
@@ -32,6 +34,7 @@
      @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
+            
          background-image: linear-gradient(#2F303A66 40%,
                 rgba(47, 48, 58, 0.4)),
                 url(../images/bg-hero/header-tablet@2x.jpg);   
@@ -44,15 +47,18 @@
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(#2F303A66 40%,
-                rgba(47, 48, 58, 0.4)),
+                    rgba(47, 48, 58, 0.4)),
                 url(../images/bg-hero/header-desktop@1x.jpg);
-        background-size: cover;
+            background-size: cover;
+        
       @media screen and (min-device-pixel-ratio: 2), 
              screen and (min-resolution: 192dpi),
              screen and (min-resolution: 2dppx) {
-            background-image: linear-gradient(#2F303A66 40%,
-                    rgba(47, 48, 58, 0.4)),
-            url(../images/bg-hero/header-tablet@2x.jpg);
+                
+                    background-image: linear-gradient(#2F303A66 40%,
+                            rgba(47, 48, 58, 0.4)),
+                        url(../images/bg-hero/header-tablet@2x.jpg);
+            
       }
     }
     // @media screen and (min-width:1200px) {
@@ -70,6 +76,7 @@
     // }
 }
 
+ 
 
 .main-title {
     margin-top: 0;

@@ -43,6 +43,7 @@
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+    overflow-y: auto;
 }
 
 .menu-container.is-open {
@@ -60,10 +61,11 @@
         font-size: 40px;
         line-height: 1.17;
         letter-spacing: 0.02em;
+        padding-top: 0;
         
 }
 .mobile-contact  {
-   margin-top: 186px;
+   margin-top: 183px;
 }
 
 .mobile-social {

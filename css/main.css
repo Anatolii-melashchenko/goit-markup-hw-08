@@ -266,8 +266,9 @@ body {
 
 /* ================= /HEADER ================= */
 /* ================= HERO ================= */
-.hero .container {
+.hero {
   max-width: 480px;
+  margin: 0 auto;
   padding-top: 130px;
   padding-bottom: 130px;
   text-align: center;
@@ -278,24 +279,24 @@ body {
   background-position: center;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero .container {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4)), url(../images/bg-hero/header-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  .hero .container {
+  .hero {
     max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4)), url(../images/bg-hero/header-tablet@1x.jpg);
     background-size: 768px 400px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero .container {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4)), url(../images/bg-hero/header-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero .container {
+  .hero {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -304,7 +305,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero .container {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 40%, rgba(47, 48, 58, 0.4)), url(../images/bg-hero/header-tablet@2x.jpg);
   }
 }
@@ -379,6 +380,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+  width: 90%;
 }
 
 .modal-close {
@@ -1214,6 +1216,7 @@ body {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  overflow-y: auto;
 }
 
 .menu-container.is-open {
@@ -1232,10 +1235,11 @@ body {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  padding-top: 0;
 }
 
 .mobile-contact {
-  margin-top: 186px;
+  margin-top: 183px;
 }
 
 .mobile-social {
