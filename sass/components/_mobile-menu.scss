@@ -5,10 +5,16 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
         display: none;
     }
+}
+
+.menu-toggle:hover,
+.menu-toggle:hover {
+    fill: var(--accent-color);
+    
 }
 
 .menu-container .icon-cross {
@@ -52,22 +58,24 @@
 .mobile-list .menu-nav-link {
         font-weight: 500;
         font-size: 40px;
-        line-height: 47px;
+        line-height: 1.17;
         letter-spacing: 0.02em;
         
 }
 .mobile-contact  {
-   margin-top: 102px;
+   margin-top: 186px;
 }
 
 .mobile-social {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
+    
 }
 
 .mobile-social-link {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196F3;
 }
@@ -80,7 +88,7 @@
     display: block;
     font-weight: 500;
     font-size: 34px;
-    line-height: 40px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: #2196F3;
     margin-bottom: 32px;
